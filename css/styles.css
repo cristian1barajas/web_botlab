@@ -1,0 +1,204 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* Reajuste para REMS - 62.5% = 10px de 16px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/** Globales **/
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 110rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 3.4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+
+/** Header **/
+
+.site-header {
+    background-color: #293846;
+    padding: 3rem 0 6rem 0;
+}
+
+.container-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar {
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+    column-gap: 2rem;
+    align-items: center;
+    padding-top: 3rem;
+}
+
+
+/** Navegacion **/
+
+.container-grid-nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1rem;
+    margin-left: 9rem;
+}
+
+.navigation a {
+    color: #BFBFBF;
+    text-decoration: none;
+    font-size: 1.4rem;
+    margin-right: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation a:hover {
+    color: #647C91;
+}
+
+.navigation a:last-of-type {
+    margin: 0;
+}
+
+
+/** Botones Login **/
+
+.button-login {
+    font-size: 1.5rem;
+    color: #647C91;
+    border-radius: 10rem;
+    background: transparent;
+    padding: 0.2rem 2rem 0.2rem 2rem;
+    text-decoration: none;
+    border: solid 2px #647C91;
+    text-align: center;
+    margin-left: 2rem;
+    transition: all 400ms ease;
+}
+
+.container-grid-button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+}
+
+.container-grid-button a:hover {
+    color: whitesmoke;
+    background-color: #647C91;
+}
+
+
+/** Cover **/
+
+.container-cover {
+    width: 100%;
+    height: 60rem;
+    background-image: url(../img/principal.png);
+    background-size: 100%;
+    /*animation: movimiento 25s infinite linear alternate;  */
+    position: absolute;
+}
+
+@keyframes movimiento {
+    from {
+        background-position: bottom left;
+    }
+    to {
+        background-position: top right;
+    }
+}
+
+.container-details {
+    width: 100%;
+    max-width: 110rem;
+    position: relative;
+    margin: auto;
+}
+
+.details {
+    width: 100%;
+    max-width: 120rem;
+    position: relative;
+    top: 4rem;
+    color: whitesmoke;
+}
+
+.details h4 {
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+    font-weight: 100;
+    margin: 1rem 3rem 2rem 3rem;
+}
+
+.details p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0 3rem 2rem 3rem;
+    max-height: 30rem;
+}
+
+
+/* Detalles de las columnas principales */
+
+.tres-columnas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
+
+.columns {
+    background-color: #2e3e4e;
+    border-radius: 2rem;
+}
+
+.bordes {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    min-width: 26rem;
+    max-height: 16rem;
+}
+
+.button-go {
+    position: relative;
+    color: black;
+    text-decoration: none;
+    margin-left: 15rem;
+    background-color: whitesmoke;
+    padding: 2rem 2.5rem;
+    border-radius: 5rem;
+}
